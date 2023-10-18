@@ -33,15 +33,20 @@ ul {
     color: white;
     font-weight: bolder;
     display: grid;
-    grid-template: repeat(12, 1fr) / 1fr 4fr;
+    grid-template: 1fr 0.25fr repeat(6, 1fr) 0.25fr repeat(3, 1fr) 60vh / 1fr 4fr;
     grid-row: 1 / -1;
     grid-column: 1;
-    align-content:
+    align-items: center;
 }
 
 svg {
     width: 1em;
     fill: white;
+    justify-self: center;
+}
+
+#logo-icon {
+    width: 1.8em;
 }
 
 #navigation {
