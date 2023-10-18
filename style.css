@@ -11,7 +11,9 @@ ul {
 :root {
     --blue: rgb(25 150 250);
     --orange: orange;
+    --light-gray: lightgrey;
     --system-ui: -apple-system, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    background-color: var(--light-gray);
 }
 
 #grid-container {
@@ -29,15 +31,34 @@ ul {
 #sidebar {
     background-color: var(--blue);
     color: white;
+    font-weight: bolder;
     display: grid;
-
+    grid-template: repeat(12, 1fr) / 1fr 4fr;
     grid-row: 1 / -1;
     grid-column: 1;
+    align-content:
+}
+
+svg {
+    width: 1em;
+    fill: white;
 }
 
 #navigation {
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
     grid-row: 1;
     grid-column: 2 / -1;
+}
+
+#navigation > * {
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+}
+
+#buttons {
+    display: flex;
 }
 
 #projects-header {
