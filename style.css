@@ -9,8 +9,63 @@ ul {
 }
 
 :root {
-    --blue: blue;
+    --blue: rgb(25 150 250);
     --orange: orange;
     --system-ui: -apple-system, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }
 
+#grid-container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template: 3fr 1fr 4fr 1fr 4fr / 1fr 4fr 1fr;
+}
+
+#grid-container > * {
+    border: black;
+    border-style: solid;
+}
+
+#sidebar {
+    background-color: var(--blue);
+    color: white;
+    display: grid;
+
+    grid-row: 1 / -1;
+    grid-column: 1;
+}
+
+#navigation {
+    grid-row: 1;
+    grid-column: 2 / -1;
+}
+
+#projects-header {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+#projects {
+    grid-row: 3 / -1;
+    grid-column: 2;
+}
+
+#announcements-header {
+    grid-row: 2;
+    grid-column: 3;
+}
+
+#announcements {
+    grid-row: 3;
+    grid-column: 3;
+}
+
+#trending-header {
+    grid-row: -3 / -2;
+    grid-column: 3;
+}
+
+#trending {
+    grid-row: -2 / -1;
+    grid-column: -2 / -1;
+}
