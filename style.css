@@ -1,0 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--system-ui);
+}
+
+ul {
+    list-style: none;
+}
+
+:root {
+    --blue: blue;
+    --orange: orange;
+    --system-ui: -apple-system, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+}
+
